@@ -5,7 +5,7 @@
   "description": "A sample Apache Cordova application that responds to the deviceready event.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "firefox www/index.html",
     "build": "cordova build android",
     "commit": "git-cz",
     "custom-tests": "echo \"(No other custom tests yet.)\" && echo",

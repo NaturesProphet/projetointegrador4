@@ -10,6 +10,7 @@ div#conteudo_geral {
 	border-radius: 10px;
 	margin: auto;
 	margin-top: 60px;
+	transform: scale(0.8);
 }
 div#conteudo {
 	margin-top: 20px;

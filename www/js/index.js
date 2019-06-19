@@ -84,7 +84,7 @@ window.onload = function init () {
         /// ação após o click para iniciar /////////////////////////////////
 
         seta.onclick = function iniciarContador () {
-
+            
             cor = true;
 
             for ( var i = 0; i < opcao.length; i++ ) {
@@ -265,5 +265,5 @@ window.onload = function init () {
                 }
             }
         }
-    }
+    }    
 }

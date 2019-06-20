@@ -16,12 +16,12 @@ Vitor Knupp - @vkcosta
 
 ## Descrição do projeto
 
-O projeto consiste em uma aplicação em html + css + javascript que funciona como um quiz educativo, fazendo perguntas dos mais diversos temas e complexidades. Jogável por um ou dois jogadores, o objetivo do jogo é ver quem é capaz de responder corretamente a maior quantidade de perguntas no menor tempo possível.
+O projeto consiste em uma aplicação em html + css + javascript que funciona como um quiz educativo, fazendo perguntas dos mais diversos temas e complexidades. O objetivo do jogo é ver quem é capaz de responder corretamente a maior quantidade de perguntas no menor tempo possível.
 
-O joguinho foi preparado para funcionar como um aplicativo android através da plataforma cordova.
+O joguinho foi preparado para funcionar como um aplicativo android através da [plataforma cordova](https://sites.google.com/site/rfdouro/salesiano/mini-curso-cordova/apresenta%C3%A7%C3%A3o).
 
-O Banco de dados para o rank de jogadores foi criado na núvem, no [ElephantSQL](https://www.elephantsql.com/), e o acesso a este banco foi intermediado por meio de um web-service simples desenvolvido em typescript utilizando o framework [Nestjs](https://nestjs.com/). 
+O Banco de dados para o rank de jogadores foi criado na núvem, no [ElephantSQL](https://www.elephantsql.com/), e o acesso a este banco foi intermediado por meio de um [web-service simples desenvolvido em typescript](https://github.com/NaturesProphet/api-projetointegrador4) utilizando o framework [Nestjs](https://nestjs.com/). 
 
-O web-service foi hospedado na núvem, através da plataforma oferecida pelo [Heroku](https://dashboard.heroku.com). 
+O web-service foi [hospedado na núvem](https://integrador4.herokuapp.com/), através da plataforma oferecida pelo [Heroku](https://dashboard.heroku.com). 
 
 A aplicação do quiz embarcada no cordova faz o crud dos dados enviando requisições HTTP a este web service.

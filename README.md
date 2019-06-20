@@ -10,8 +10,8 @@ Desenvolver um joguinho educativo de perguntas e respostas para ser utilizado pe
 
 ## Autores
 ```
-Mateus Garcia - @naturesprophet
-Vitor Knupp - @vkcosta
+Back-end: Mateus Garcia - @naturesprophet
+Front-end: Vitor Knupp - @vkcosta
 ```
 
 ## Descrição do projeto

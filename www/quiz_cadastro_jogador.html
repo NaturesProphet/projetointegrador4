@@ -17,13 +17,17 @@
                     <h1 id="pergunta">Dados do Jogador</h1>
                 </div>
 
+                <form method="post" action="quiz_1jogador.html">
                 <label>Nome</label><br>
-                <input id="cadastro" type="text" placeholder="Nome do jogador" />
+                <input id="nome" class="cadastro" type="text" placeholder="Nome do jogador" value=""/>
                 <br>
                 <br>
                 <label>Idade</label><br>
-                <input id="cadastro" type="number" placeholder="Idade do jogador"/>
-                <a href="quiz_1jogador.html" id="menu" style="margin-left: -500px;">AVANÇAR</a>
+                <input id="idade" class="cadastro" type="number" placeholder="Idade do jogador" value=""/>
+                
+                <!--<a href="quiz_1jogador.html" id="menu" style="margin-left: -500px;" name="cadastroJogador" type="submit">AVANÇAR</a>-->
+                <input id="menu" style="margin-left: -500px;"  type="submit" onclick="Enviar();" value="Jogar" />
+            </form>
                 <form id="formulario">
                     <input type="text" id="numero" disabled="disabled" />
                 </form>

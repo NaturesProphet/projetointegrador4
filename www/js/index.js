@@ -158,7 +158,7 @@ window.onload = function init () {
         }
     }
 
-    var tempo = 60,
+    var tempo = 10,
         cronometro,
         contando = false,
         jogador = 0,
@@ -186,6 +186,10 @@ window.onload = function init () {
             contando = false;
 
             if ( document.title == 'Quiz - 1 jogador' ) {
+
+                                //tratamento para inserção dos dados no BD.
+                                  
+                                
 
                 ////////////////////////////////////////////////////////////////////
                 /// tela final exibida ao fim do jogo para modo 1jogador ///////////
@@ -265,5 +269,39 @@ window.onload = function init () {
                 }
             }
         }
-    }    
+    }
+    
+    function salvar(){
+        const request = require('request-promise' );
+        const URI = `https://integrador4.herokuapp.com`;
+
+        const requestOptions = {
+            method: 'POST',
+            uri: URI,
+            /*auth: {
+                user: options.RANCHER_ACCESS_KEY,
+                pass: options.RANCHER_SECRET_KEY
+            }
+            body: {
+                "rollingRestartStrategy": {
+                    "batchSize": 1,
+                    "intervalMillis": 2000
+                }
+            },*/
+            json: true
+        };
+        request( requestOptions )
+            .then( function ( parsedBody ) {
+                console.log( `OK! Service ${parsedBody.name} is ${parsedBody.state}` );
+            } )
+            .catch( function ( err ) {
+                console.log( `Could not restart the service.\n${err.message}` );
+            } );
+    }
+
+}
+
+function Enviar(){
+    let n = document.getElementById('nome').value;
+    let i = document.getElementById('idade').value;
 }

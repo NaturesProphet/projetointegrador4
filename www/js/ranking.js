@@ -25,10 +25,10 @@ window.onload = function init() {
 
                     opcao = document.getElementsByTagName('li'),
 
-                    opcao[0].innerHTML = data[0].Jogador_nome + " - " +data[0].Jogador_acertos + ' Acertos';
-                    opcao[1].innerHTML = data[1].Jogador_nome + " - " +data[1].Jogador_acertos + ' Acertos';
-                    opcao[2].innerHTML = data[2].Jogador_nome + " - " +data[2].Jogador_acertos + ' Acertos';
-                    opcao[3].innerHTML = data[3].Jogador_nome + " - " +data[3].Jogador_acertos + ' Acertos';
+                    opcao[0].innerHTML = data[0].Jogador_nome + " " +data[0].Jogador_acertos + ' Acertos';
+                    opcao[1].innerHTML = data[1].Jogador_nome + " " +data[1].Jogador_acertos + ' Acertos';
+                    opcao[2].innerHTML = data[2].Jogador_nome + " " +data[2].Jogador_acertos + ' Acertos';
+                    opcao[3].innerHTML = data[3].Jogador_nome + " " +data[3].Jogador_acertos + ' Acertos';
                     console.log(data)
                 })
         })
@@ -36,4 +36,18 @@ window.onload = function init() {
             console.log("Deu erro. ", erro)
         })
 
+ /*   let xhr = new XMLHttpRequest();
+
+    xhr.open('GET', 'https://integrador4.herokuapp.com');
+
+    xhr.responseType = 'json';
+
+    xhr.send();
+
+    // the response is {"message": "Hello, world!"}
+    xhr.onload = function () {
+        let responseObj = xhr.response;
+        alert(responseObj.message); // Hello, world!
+    };
+*/
 }

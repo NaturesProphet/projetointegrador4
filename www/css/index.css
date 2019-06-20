@@ -156,12 +156,11 @@ p a:hover {
 }
 
 .cadastro{
-    padding-top: 15px;
-    font-size: medium;
+    font-size: 26px;
     width: 95%;
     border: solid 2px white;
     text-align: left;
     color: gold;
-    height: 30px;
+    height: 45px;
     border-radius: 10px;
 }

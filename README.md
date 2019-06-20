@@ -22,6 +22,6 @@ O joguinho foi preparado para funcionar como um aplicativo android através da [
 
 O Banco de dados para o rank de jogadores foi criado na núvem, no [ElephantSQL](https://www.elephantsql.com/), e o acesso a este banco foi intermediado por meio de um [web-service simples desenvolvido em typescript](https://github.com/NaturesProphet/api-projetointegrador4) utilizando o framework [Nestjs](https://nestjs.com/). 
 
-O web-service foi [hospedado na núvem](https://integrador4.herokuapp.com/), através da plataforma oferecida pelo [Heroku](https://www.heroku.com/). 
+O web-service foi [hospedado na núvem](https://integrador4.herokuapp.com/docs), através da plataforma oferecida pelo [Heroku](https://www.heroku.com/). 
 
 A aplicação do quiz embarcada no cordova faz o crud dos dados enviando requisições HTTP a este web service.

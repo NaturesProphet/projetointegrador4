@@ -18,9 +18,21 @@ window.onload = function init() {
 
     fetch(url, myInit)
         .then(function (response) {
-            console.log('Deu certo.\n', response);
+            //console.log('Deu certo.\n', response.json());
+            response.json()
+                .then(data => {
+                    let jogadores = data;
+
+                    opcao = document.getElementsByTagName('li'),
+
+                    opcao[0].innerHTML = data[0].Jogador_nome + " - " +data[0].Jogador_acertos + ' Acertos';
+                    opcao[1].innerHTML = data[1].Jogador_nome + " - " +data[1].Jogador_acertos + ' Acertos';
+                    opcao[2].innerHTML = data[2].Jogador_nome + " - " +data[2].Jogador_acertos + ' Acertos';
+                    opcao[3].innerHTML = data[3].Jogador_nome + " - " +data[3].Jogador_acertos + ' Acertos';
+                    console.log(data)
+                })
         })
-        .catch(function (erro){
+        .catch(function (erro) {
             console.log("Deu erro. ", erro)
         })
 
